@@ -1,0 +1,76 @@
+body {
+    --background1: radial-gradient(ellipse at top, rgba(77, 36, 41, 0.713),rgba(45, 61, 87, 0.451),transparent),
+    linear-gradient(45deg, rgba(30, 31, 57, 0.675),rgba(33, 36, 44, 0.579),#345);
+    --background2: radial-gradient(farthest-corner at 2em 2em, rgba(13, 19, 32, 0.501) 0% ,rgba(16, 84, 156, 0.431) 100%),
+    linear-gradient(rgb(33, 44, 56),rgba(15, 5, 50, 0.785));
+    --background3: radial-gradient(ellipse at bottom, rgba(28, 28, 46, 0.57),rgba(18, 26, 71, 0.675),rgba(8, 33, 80, 0.596)),
+    linear-gradient(rgb(39, 115, 93),rgb(40, 53, 47));
+
+    background: var(--background1);
+    
+
+}
+
+#maindiv {
+    height: 100vb;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    background : var(--background2);
+    font-size: 30px;
+    font-family: chilanka;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--background3);
+    font-family: chilanka;
+    font-size: 30px;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.2em;
+}
+
+#wall {
+    background : var(--background2);
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em;
+    padding: 2em;
+
+}
+.taskContainer {
+    
+    background: var(--background1);
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em;
+    font-family: chilanka;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskLabelClass {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 25px;
+}
+
+.dateLabelClass {
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 17px;
+}
+
