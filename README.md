@@ -1,3 +1,3 @@
-Idea is that to keep up with the schedule, we need to be in constant touch with the it.
-One way to that is making our schedule our wallpaper
-so this is website that lets users create their schedule and lets them download it as a beautiful wallpaper image...
+Idea is that to keep up with the schedule, we need to be in constant touch with it.
+One way to achieve that is making our schedule our wallpaper
+so this is a website, that lets users create their schedule and lets them download it as a beautiful wallpaper image...
