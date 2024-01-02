@@ -1,4 +1,3 @@
-
 window.onload = function(){
     var timeInput = document.getElementById("timeText")
     var taskInput = document.getElementById("taskText")
@@ -34,9 +33,10 @@ window.onload = function(){
 
         var wall = document.createElement("div")
         wall.id = "wall"
-        // adding a random background to the wall
         const num = Math.floor(Math.random() * 3) + 1;
         wall.style.background = `var(--background${num})`
+
+
 
         var downloadButton = document.createElement("Button")
         downloadButton.textContent = "Download"
@@ -53,7 +53,7 @@ window.onload = function(){
             // as currently there are 3 background styles
             const num = Math.floor(Math.random() * 3) + 1;
             task.style.background = `var(--background${num})`
-            
+            wall.style.background = `var(--background${num})`
 
 
 
@@ -72,6 +72,91 @@ window.onload = function(){
 
             wall.appendChild(task)
         });
+        // setting the dimentions of the elements
+        const screenWidth = screen.width
+        const screenHeight = screen.height
+        const noOfTasks = allTasksArray.length
+        // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
+
+        wall.style.width = screenWidth
+        wall.style.height = screenHeight
+
+        if (screenWidth <= 650) {
+            
+            const taskContainerHeight = Math.floor(screenHeight/noOfTasks) -20
+            
+            
+            const sheet = window.document.styleSheets[0]
+            sheet.insertRule(`
+            @media (max-width: 650px){
+                #wall {
+                    margin: 0;
+                    padding: 0;
+                    grid-template-columns: 1fr;
+                    height: ${screenHeight};
+                }
+            
+                .taskContainer {
+                    padding: 0px;
+                    margin: 10px;
+                    height: ${taskContainerHeight}px;
+                    width: ${screenWidth}px;
+                
+                }
+                .taskLabelClass {
+                    margin: auto;
+                    padding: ${taskContainerHeight/12}px 0 0 0;
+                    font-size: ${taskContainerHeight/3}px;
+                    
+                    
+                }
+                .dateLabelClass {
+                    margin: auto;
+                    padding: 0 0 ${taskContainerHeight/12}px 0;
+                    font-size: ${taskContainerHeight/6}px
+                    
+                }
+            }
+            `, sheet.cssRules.length)
+        }else{
+            const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
+            const taskContainerWidth = Math.floor(screenWidth/2) - 50
+            const sheet = window.document.styleSheets[0]
+            sheet.insertRule(`
+            @media (max-width: 4000px){
+                #wall {
+                    margin: 0;
+                    padding: 0;
+                    grid-template-columns: 1fr 1fr;
+                    height: ${screenHeight};
+                
+                }
+            
+                .taskContainer {
+                    padding: 0px;
+                    margin: 10px;
+                    height: ${taskContainerHeight}px;
+                    width: ${taskContainerWidth}px;
+                
+                }
+                .taskLabelClass {
+                
+                    margin: auto;
+                    padding: ${taskContainerHeight/12}px 0 0 0;
+                    font-size: ${taskContainerHeight/3}px;
+                    
+                    
+                }
+                .dateLabelClass {
+                    margin: auto;
+                    // display: block;
+                    padding: 0 0 ${taskContainerHeight/12}px 0;
+                    font-size: ${taskContainerHeight/6}px
+                    
+                }
+            }
+            `, sheet.cssRules.length)
+        }
 
     }
 
