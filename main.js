@@ -78,8 +78,8 @@ window.onload = function(){
         const noOfTasks = allTasksArray.length
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
 
-        wall.style.width = screenWidth
-        wall.style.height = screenHeight
+        // wall.style.width = screenWidth
+        // wall.style.height = screenHeight
 
         if (screenWidth <= 650) {
             
@@ -94,6 +94,7 @@ window.onload = function(){
                     padding: 0;
                     grid-template-columns: 1fr;
                     height: 650px;
+                    width: ${screenWidth};
                 }
             
                 .taskContainer {
@@ -129,6 +130,7 @@ window.onload = function(){
                     padding: 0;
                     grid-template-columns: 1fr 1fr;
                     height: ${screenHeight};
+                    width: ${screenWidth};
                 
                 }
             
