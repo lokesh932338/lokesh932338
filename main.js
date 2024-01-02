@@ -99,7 +99,7 @@ window.onload = function(){
             
                 .taskContainer {
                     padding: 0px;
-                    margin: 6px;
+                    margin: 0px;
                     height: ${taskContainerHeight}px;
                     // width: ${screenWidth}px;
                 
