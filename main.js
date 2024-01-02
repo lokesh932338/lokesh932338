@@ -81,7 +81,7 @@ window.onload = function(){
         // wall.style.width = screenWidth
         // wall.style.height = screenHeight
 
-        if (screenWidth <= 650) {
+        if (screenWidth <= 1300) {
             
             const taskContainerHeight = Math.floor(screenHeight/noOfTasks)
             
