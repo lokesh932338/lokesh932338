@@ -53,8 +53,8 @@ input {
 .taskContainer {
     
     border-radius: 0.5em;
-    margin: 1em;
-    padding: 1em;
+/*     margin: 1em; */
+    padding: 0.5em;
     font-family: 'Kalam', cursive;
     
     
