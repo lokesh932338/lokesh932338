@@ -73,8 +73,8 @@ window.onload = function(){
             wall.appendChild(task)
         });
         // setting the dimentions of the elements
-        const screenWidth = screen.width
-        const screenHeight = screen.height
+        const screenWidth = window.screen.width
+        const screenHeight = window.screen.height
         const noOfTasks = allTasksArray.length
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
 
@@ -100,7 +100,7 @@ window.onload = function(){
                     padding: 0px;
                     margin: 10px;
                     height: ${taskContainerHeight}px;
-                    width: ${screenWidth}px;
+                    // width: ${screenWidth}px;
                 
                 }
                 .taskLabelClass {
