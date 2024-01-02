@@ -16,6 +16,8 @@ body {
     /* height: 100vb; */
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    
 }
 
 button {
