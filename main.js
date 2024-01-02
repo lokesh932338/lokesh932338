@@ -124,8 +124,6 @@ window.onload = function(){
                 }
             }
                     
-                
-            }
             `, sheet.cssRules.length)
         }else{
             const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
