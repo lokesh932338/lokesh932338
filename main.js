@@ -73,7 +73,7 @@ window.onload = function(){
             wall.appendChild(task)
         });
         // setting the dimentions of the elements
-        const screenWidth = window.screen.width *2
+        const screenWidth = window.screen.width
         const screenHeight = window.screen.height
         const noOfTasks = allTasksArray.length
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
@@ -81,8 +81,13 @@ window.onload = function(){
         // wall.style.width = screenWidth
         // wall.style.height = screenHeight
 
-        if (screenWidth <= 1300) {
-            
+        if (screenWidth <= 650) {
+            if(noOfTasks <= 6){
+                const gridTemplateColumns = "1fr"
+            }else{
+                const gridTemplateColumns = "1fr 1fr"
+            }
+                
             const taskContainerHeight = Math.floor(screenHeight/noOfTasks)
             
             
@@ -92,8 +97,8 @@ window.onload = function(){
                 #wall {
                     margin: 0;
                     padding: 0;
-                    grid-template-columns: 1fr;
-                    height: 1500px;
+                    grid-template-columns: ${gridTemplateColumns};
+                    height: 750px;
                     width: ${screenWidth};
                 }
             
@@ -117,6 +122,9 @@ window.onload = function(){
                     font-size: ${taskContainerHeight/6}px
                     
                 }
+            }
+                    
+                
             }
             `, sheet.cssRules.length)
         }else{
