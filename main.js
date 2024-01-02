@@ -93,7 +93,7 @@ window.onload = function(){
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr;
-                    height: 650px;
+                    height: 700px;
                     width: ${screenWidth};
                 }
             
