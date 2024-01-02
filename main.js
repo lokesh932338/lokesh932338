@@ -73,7 +73,7 @@ window.onload = function(){
             wall.appendChild(task)
         });
         // setting the dimentions of the elements
-        const screenWidth = window.screen.width
+        const screenWidth = window.screen.width *2
         const screenHeight = window.screen.height
         const noOfTasks = allTasksArray.length
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
@@ -93,7 +93,7 @@ window.onload = function(){
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr;
-                    height: 750px;
+                    height: 1500px;
                     width: ${screenWidth};
                 }
             
