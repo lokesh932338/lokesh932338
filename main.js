@@ -83,7 +83,7 @@ window.onload = function(){
 
         if (screenWidth <= 650) {
             
-            const taskContainerHeight = Math.floor(screenHeight/noOfTasks) -12
+            const taskContainerHeight = Math.floor(screenHeight/noOfTasks)
             
             
             const sheet = window.document.styleSheets[0]
