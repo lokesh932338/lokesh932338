@@ -34,6 +34,9 @@ window.onload = function(){
 
         var wall = document.createElement("div")
         wall.id = "wall"
+        // adding a random background to the wall
+        const num = Math.floor(Math.random() * 3) + 1;
+        wall.style.background = `var(--background${num})`
 
         var downloadButton = document.createElement("Button")
         downloadButton.textContent = "Download"
@@ -50,7 +53,7 @@ window.onload = function(){
             // as currently there are 3 background styles
             const num = Math.floor(Math.random() * 3) + 1;
             task.style.background = `var(--background${num})`
-            wall.style.background = `var(--background${num})`
+            
 
 
 
