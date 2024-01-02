@@ -93,7 +93,7 @@ window.onload = function(){
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr;
-                    height: ${screenHeight};
+                    // height: ${screenHeight};
                 }
             
                 .taskContainer {
