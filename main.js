@@ -70,7 +70,7 @@ window.onload = function(){
         let wall = document.getElementById("wall")
         domtoimage.toBlob(wall)
             .then(function(blob){
-                window.saveAs(blob,"wall.jpeg")
+                window.saveAs(blob,"wall.png")
             })
         
     }
