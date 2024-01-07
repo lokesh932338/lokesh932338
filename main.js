@@ -79,6 +79,8 @@ window.onload = function(){
 screenHeight = ${screenHeight}`)
         const noOfTasks = allTasksArray.length
 			     let gridTemplateColumns
+        let taskContainerHeight
+        let taskContainerWidth
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
 
         // wall.style.width = screenWidth
@@ -87,13 +89,16 @@ screenHeight = ${screenHeight}`)
         if (screenWidth <= 650) {
             if(noOfTasks <= 6){
                 gridTemplateColumns = "1fr"
+                taskContainerWidth = screenWidth - 20
+                taskContainerHeight = Math.floor(screenHeight/noOfTasks)-20
 	               alert(gridTemplateColumns)  
             }else{
                 gridTemplateColumns = "1fr 1fr"
+                taskContainerWidth = Math.floor(screenWidth/2) - 50
+                taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
                 alert(gridTemplateColumns)
             }
-                
-            const taskContainerHeight = Math.floor(screenHeight/noOfTasks)
+               
             
             
             const sheet = window.document.styleSheets[0]
@@ -103,15 +108,16 @@ screenHeight = ${screenHeight}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: ${gridTemplateColumns};
-                    height: 750px;
+                    height: ${screenHeight + 175}px;
                     width: ${screenWidth};
                 }
             
                 .taskContainer {
-                    padding: 0px;
-                    margin: 0px;
+                    display: inline-block;
+                    padding: auto;
+                    margin: 10px;
                     height: ${taskContainerHeight}px;
-                    // width: ${screenWidth}px;
+                    width: ${taskContainerWidth}px;
                 
                 }
                 .taskLabelClass {
@@ -142,7 +148,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr 1fr;
-                    height: ${screenHeight};
+                    height: ${screenHeight + 250};
                     width: ${screenWidth};
                 
                 }
