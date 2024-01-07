@@ -75,7 +75,10 @@ window.onload = function(){
         // setting the dimentions of the elements
         const screenWidth = window.screen.width
         const screenHeight = window.screen.height
+        alert(`screenWidth = {screenWidth}
+screenHeight = {screenHeight}`)
         const noOfTasks = allTasksArray.length
+			     let gridTemplateColumns
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
 
         // wall.style.width = screenWidth
@@ -83,9 +86,11 @@ window.onload = function(){
 
         if (screenWidth <= 650) {
             if(noOfTasks <= 6){
-                const gridTemplateColumns = "1fr"
+                gridTemplateColumns = "1fr"
+	               alert(gridTemplateColumns)  
             }else{
-                const gridTemplateColumns = "1fr 1fr"
+                gridTemplateColumns = "1fr 1fr"
+                alert(gridTemplateColumns)
             }
                 
             const taskContainerHeight = Math.floor(screenHeight/noOfTasks)
