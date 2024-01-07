@@ -75,8 +75,8 @@ window.onload = function(){
         // setting the dimentions of the elements
         const screenWidth = window.screen.width
         const screenHeight = window.screen.height
-        alert(`screenWidth = {screenWidth}
-screenHeight = {screenHeight}`)
+        alert(`screenWidth = ${screenWidth}
+screenHeight = ${screenHeight}`)
         const noOfTasks = allTasksArray.length
 			     let gridTemplateColumns
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
@@ -133,6 +133,8 @@ screenHeight = {screenHeight}`)
         }else{
             const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
             const taskContainerWidth = Math.floor(screenWidth/2) - 50
+            alert(`taskContainerHeight = ${taskContainerHeight}
+taskContianerWidth = ${taskContainerWidth}`)
             const sheet = window.document.styleSheets[0]
             sheet.insertRule(`
             @media (max-width: 4000px){
@@ -146,7 +148,7 @@ screenHeight = {screenHeight}`)
                 }
             
                 .taskContainer {
-                    padding: 0px;
+                    padding: auto;
                     margin: 10px;
                     height: ${taskContainerHeight}px;
                     width: ${taskContainerWidth}px;
