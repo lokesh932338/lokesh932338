@@ -98,7 +98,8 @@ screenHeight = ${screenHeight}`)
                 taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
                 alert(gridTemplateColumns)
             }
-               
+            alert(`taskContainerHeight = ${taskContainerHeight}
+taskContianerWidth = ${taskContainerWidth}`)
             
             
             const sheet = window.document.styleSheets[0]
@@ -108,7 +109,7 @@ screenHeight = ${screenHeight}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: ${gridTemplateColumns};
-                    height: ${screenHeight + 175}px;
+                    height: ${screenHeight + 250}px;
                     width: ${screenWidth};
                 }
             
