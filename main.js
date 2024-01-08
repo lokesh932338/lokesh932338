@@ -75,8 +75,8 @@ window.onload = function(){
         // setting the dimentions of the elements
         const screenWidth = window.screen.width
         const screenHeight = window.screen.height
-        alert(`screenWidth = ${screenWidth}
-screenHeight = ${screenHeight}`)
+        alert(`screenHeight = ${screenHeight}
+screenWidth = ${screenWidth}`)
         const noOfTasks = allTasksArray.length
 			     let gridTemplateColumns
         let taskContainerHeight
@@ -138,7 +138,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     
             `, sheet.cssRules.length)
         }else{
-            screenHeight += 250
+            screenWidth += 250
             const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
             const taskContainerWidth = Math.floor(screenWidth/2) - 50
             alert(`taskContainerHeight = ${taskContainerHeight}
@@ -150,7 +150,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr 1fr;
-                    height: ${screenHeight + 250};
+                    height: ${screenHeight + 550};
                     width: ${screenWidth};
                 
                 }
