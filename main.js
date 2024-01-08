@@ -138,7 +138,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     
             `, sheet.cssRules.length)
         }else{
-            screenWidth += 550
+            
             const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
             const taskContainerWidth = Math.floor(screenWidth/2) - 50
             alert(`taskContainerHeight = ${taskContainerHeight}
