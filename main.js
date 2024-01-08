@@ -138,7 +138,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     
             `, sheet.cssRules.length)
         }else{
-            screenWidth += 250
+            screenWidth += 550
             const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
             const taskContainerWidth = Math.floor(screenWidth/2) - 50
             alert(`taskContainerHeight = ${taskContainerHeight}
@@ -150,7 +150,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr 1fr;
-                    height: ${screenHeight + 550};
+                    height: ${screenHeight + 250};
                     width: ${screenWidth};
                 
                 }
