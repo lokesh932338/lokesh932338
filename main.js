@@ -94,7 +94,7 @@ screenWidth = ${screenWidth}`)
 	               alert(gridTemplateColumns)  
             }else{
                 gridTemplateColumns = "1fr 1fr"
-                taskContainerWidth = Math.floor(screenWidth/2) - 50
+                taskContainerWidth = Math.floor(screenWidth/2) - 20
                 taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
                 alert(gridTemplateColumns)
             }
