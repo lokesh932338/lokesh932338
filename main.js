@@ -92,13 +92,13 @@ screenWidth = ${screenWidth}`)
                 gridTemplateColumns = "1fr"
                 taskContainerWidth = screenWidth - 20
                 taskContainerHeight = Math.floor(screenHeight/noOfTasks)-20
-                fontSize = taskContainerHeight//3
+                fontSize = math.floor(taskContainerHeight/3)
 	               alert(gridTemplateColumns)  
             }else{
                 gridTemplateColumns = "1fr 1fr"
                 taskContainerWidth = Math.floor(screenWidth/2) - 20
                 taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
-                fontSize = taskContainerHeight//6
+                fontSize = math.floor(taskContainerHeight/6)
                 alert(gridTemplateColumns)
             }
             alert(`taskContainerHeight = ${taskContainerHeight}
@@ -134,7 +134,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                 .dateLabelClass {
                     margin: auto;
                     padding: 0 0 ${taskContainerHeight/12}px 0;
-                    font-size: ${fontSize//2}px
+                    font-size: ${math.floor(fontSize/2)}px
                     
                 }
             }
