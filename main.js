@@ -116,7 +116,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                 .taskContainer {
                     display: inline-block;
                     padding: auto;
-                    margin: 10px;
+                    margin: 0px;
                     height: ${taskContainerHeight}px;
                     width: ${taskContainerWidth}px;
                 
