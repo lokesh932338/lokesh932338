@@ -48,8 +48,6 @@ input {
     background : var(--background2);
     display : grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2em;
-    padding: 2em;
 
 }
 .taskContainer {
