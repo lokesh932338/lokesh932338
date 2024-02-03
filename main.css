@@ -5,7 +5,7 @@ body {
     linear-gradient(rgb(56, 33, 50),rgba(3, 81, 81, 0.785));
     --background3: radial-gradient(ellipse at bottom, rgba(78, 52, 104, 0.57),rgba(13, 22, 75, 0.675),rgba(8, 33, 80, 0.596)),
     linear-gradient(rgb(115, 39, 109),rgb(5, 53, 42));
-
+    box-sizing: border-box;
     background: var(--background2);
     color: rgb(231, 229, 229);
     
