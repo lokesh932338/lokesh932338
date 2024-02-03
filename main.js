@@ -81,6 +81,7 @@ screenWidth = ${screenWidth}`)
 			     let gridTemplateColumns
         let taskContainerHeight
         let taskContainerWidth
+			     let fontSize
         // i know these are numbers but as of now px will be automatically added by the browsers and i don't know any way around now...
 
         // wall.style.width = screenWidth
@@ -91,11 +92,13 @@ screenWidth = ${screenWidth}`)
                 gridTemplateColumns = "1fr"
                 taskContainerWidth = screenWidth - 20
                 taskContainerHeight = Math.floor(screenHeight/noOfTasks)-20
+                fontSize = taskContainerHeight//3
 	               alert(gridTemplateColumns)  
             }else{
                 gridTemplateColumns = "1fr 1fr"
                 taskContainerWidth = Math.floor(screenWidth/2) - 20
                 taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
+                fontSize = taskContainerHeight//5
                 alert(gridTemplateColumns)
             }
             alert(`taskContainerHeight = ${taskContainerHeight}
@@ -124,14 +127,14 @@ taskContianerWidth = ${taskContainerWidth}`)
                 .taskLabelClass {
                     margin: auto;
                     padding: ${taskContainerHeight/12}px 0 0 0;
-                    font-size: ${taskContainerHeight/3}px;
+                    font-size: ${fontSize}px;
                     
                     
                 }
                 .dateLabelClass {
                     margin: auto;
                     padding: 0 0 ${taskContainerHeight/12}px 0;
-                    font-size: ${taskContainerHeight/6}px
+                    font-size: ${fontSize//2}px
                     
                 }
             }
