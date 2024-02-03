@@ -92,13 +92,13 @@ screenWidth = ${screenWidth}`)
                 gridTemplateColumns = "1fr"
                 taskContainerWidth = screenWidth - 20
                 taskContainerHeight = Math.floor(screenHeight/noOfTasks)-20
-                fontSize = math.floor(taskContainerHeight/3)
+                fontSize = Math.floor(taskContainerHeight/3)
 	               alert(gridTemplateColumns)  
             }else{
                 gridTemplateColumns = "1fr 1fr"
                 taskContainerWidth = Math.floor(screenWidth/2) - 20
                 taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) -20
-                fontSize = math.floor(taskContainerHeight/6)
+                fontSize = Math.floor(taskContainerHeight/6)
                 alert(gridTemplateColumns)
             }
             alert(`taskContainerHeight = ${taskContainerHeight}
@@ -119,22 +119,22 @@ taskContianerWidth = ${taskContainerWidth}`)
                 .taskContainer {
                     display: inline-block;
                     padding: auto;
-                    margin: 0px;
+                    margin: 5px;
                     height: ${taskContainerHeight}px;
                     width: ${taskContainerWidth}px;
                 
                 }
                 .taskLabelClass {
                     margin: auto;
-                    padding: ${taskContainerHeight/12}px 0 0 0;
+                    padding: ${fontSize/4}px 0 0 0;
                     font-size: ${fontSize}px;
                     
                     
                 }
                 .dateLabelClass {
                     margin: auto;
-                    padding: 0 0 ${taskContainerHeight/12}px 0;
-                    font-size: ${math.floor(fontSize/2)}px
+                    padding: 0 0 ${fontSize/4}px 0;
+                    font-size: ${Math.floor(fontSize/2)}px
                     
                 }
             }
