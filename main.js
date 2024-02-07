@@ -112,7 +112,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: ${gridTemplateColumns};
-                    height: ${screenHeight + 250}px;
+                    height: ${screenHeight + 50}px;
                     width: ${screenWidth};
                 }
             
@@ -142,7 +142,7 @@ taskContianerWidth = ${taskContainerWidth}`)
             `, sheet.cssRules.length)
         }else{
             
-            const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2))
+            const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2))+ Math.floor(200/noOfTasks)
             const taskContainerWidth = Math.floor(screenWidth/2) - 50
             alert(`taskContainerHeight = ${taskContainerHeight}
 taskContianerWidth = ${taskContainerWidth}`)
