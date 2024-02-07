@@ -142,18 +142,18 @@ taskContianerWidth = ${taskContainerWidth}`)
             `, sheet.cssRules.length)
         }else{
             
-            const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2))
+            const taskContainerHeight = Math.floor(screenHeight/Math.ceil(noOfTasks/2)) + Math.floor
             const taskContainerWidth = Math.floor(screenWidth/2) - 50
             alert(`taskContainerHeight = ${taskContainerHeight}
 taskContianerWidth = ${taskContainerWidth}`)
             const sheet = window.document.styleSheets[0]
             sheet.insertRule(`
-            @media (max-width: 4000px){
+            @media (max-width: 651px){
                 #wall {
                     margin: 0;
                     padding: 0;
                     grid-template-columns: 1fr 1fr;
-                    height: ${screenHeight + 550};
+                    height: ${screenHeight};
                     width: ${screenWidth};
                 
                 }
