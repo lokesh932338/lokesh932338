@@ -112,7 +112,7 @@ taskContianerWidth = ${taskContainerWidth}`)
                     margin: 0;
                     padding: 0;
                     grid-template-columns: ${gridTemplateColumns};
-                    height: ${screenHeight + 50}px;
+                    height: ${screenHeight + 250}px;
                     width: ${screenWidth};
                 }
             
