@@ -53,6 +53,7 @@ input {
     background : var(--background2);
     display : grid;
     grid-template-columns: 1fr 1fr;
+    color: rgb(100,100,100);
 
 }
 .taskContainer {
