@@ -33,7 +33,7 @@ window.onload = function(){
 
         var wall = document.createElement("div")
         wall.id = "wall"
-        const num = Math.floor(Math.random() * 3) + 1;
+        const num = Math.floor(Math.random() * 4) + 1;
         wall.style.background = `var(--background${num})`
 
 
@@ -51,7 +51,7 @@ window.onload = function(){
             task.classList.toggle("taskContainer")
             // code to randomly select the background of task
             // as currently there are 3 background styles
-            const num = Math.floor(Math.random() * 3) + 1;
+            const num = Math.floor(Math.random() * 4) + 1;
             task.style.background = `var(--background${num})`
             wall.style.background = `var(--background${num})`
 
